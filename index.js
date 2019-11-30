@@ -7,12 +7,13 @@ app.get('/', (req, res) => {
 
 app.listen(8080, () => {
     console.log('Hey joe! you run in port 8080');
-    console.log(`
+
+    const welcomeword = `
     ██╗ ██████╗ ███████╗
     ██║██╔═══██╗██╔════╝
     ██║██║   ██║█████╗  
 ██  ██║██║   ██║██╔══╝  
 ╚█████╔╚██████╔╝███████╗
-╚════╝  ╚═════╝ ╚══════╝
-    `);
+╚════╝  ╚═════╝ ╚══════╝`
+    console.log('\x1b[32m', welcomeword);
 });
